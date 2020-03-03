@@ -1,16 +1,22 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Header from './components/Header'
-import Liste from './components/Liste'
+import Header from './components/interface/Header'
+import Liste from './components/contact/Liste'
 import { Provider } from './context'
+import AddContact from './components/contact/AddContact'
+
 function App() {
   return (
     <Provider>
       <div className="App">
           <Header/>
-        <div className="Container">
-            <Liste/>
+        <div>
+          <AddContact/>
         </div>
+        <div className="Container">
+          <Liste/>
+        </div>
+        
       </div>
     </Provider>
     
